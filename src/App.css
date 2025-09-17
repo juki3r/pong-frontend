@@ -1,38 +1,133 @@
-.App {
-  text-align: center;
+.logo {
+  width: 100px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.title {
+  font-size: 26px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  color: black;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.title2 {
+  font-style: italic;
+  font-size: 18px;
+  font-weight: 100;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+
+/* .navbar {
+  background: linear-gradient(90deg, #e5e2e2, #434343);
+} */
+
+.navbar {
+  background: linear-gradient(90deg, #ffc107, #212529);
+}
+
+
+
+/* Style for active nav link */
+.navbar .nav-link.active {
+  border-bottom: 3px solid gold;
+  color: yellow !important;
+  /* optional: also make text yellow */
+}
+
+/* Smooth hover effect */
+.navbar .nav-link {
+  transition: border-color 0.3s, color 0.3s;
+}
+
+.navbar .nav-link:hover {
+  border-bottom: 3px solid rgba(255, 255, 0, 0.6);
+  color: #ffc107 !important;
+  /* Bootstrap warning yellow */
+}
+
+
+
+/* Remove Bootstrap default border/outline */
+.custom-toggler {
+  border: none;
+  background: transparent;
+  outline: none;
+  padding: 0.25rem;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  gap: 5px;
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
+/* Hamburger lines */
+.custom-toggler .toggler-icon {
+  width: 24px;
+  height: 3px;
+  background-color: white;
+  border-radius: 2px;
+  transition: all 0.3s ease;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+/* When open → transform to "X" */
+.custom-toggler.open .toggler-icon:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+  background-color: red;
+}
+
+.custom-toggler.open .toggler-icon:nth-child(2) {
+  opacity: 0;
+}
+
+.custom-toggler.open .toggler-icon:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -5px);
+  background-color: red;
+}
+
+.footer {
+  display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* MAXIMUN WIDTH IS 600px WHICH IS MOBILES */
+@media (max-width: 600px) {
+  .logo {
+    width: 60px;
   }
-  to {
-    transform: rotate(360deg);
+
+  .title {
+    font-size: 18px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 4px;
+
+  }
+
+  .title2 {
+    font-style: italic;
+    font-size: 13px;
+    font-weight: 100;
+  }
+
+  .nav-link {
+    color: black !important;
   }
 }
