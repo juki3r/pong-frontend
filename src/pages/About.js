@@ -146,7 +146,7 @@ function About() {
                     <div className="row">
                         <div className="col-md-4 mb-3">
                             <h3 className="fw-bold">100+</h3>
-                            <p>Happy Clients</p>
+                            <p>Happy Clientss</p>
                         </div>
                         <div className="col-md-4 mb-3">
                             <h3 className="fw-bold">50+</h3>
